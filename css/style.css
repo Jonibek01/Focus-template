@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+*,html {
+    box-sizing: border-box !important;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* body part */
+
+#header {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#header .main-header .container .navbar {
+    color: #fff;
+    padding-bottom: 60px;
+}
+#header .main-header .container .navbar .logo {
+    float: left;
+    line-height: 100px;
+}
+#header .main-header .container .navbar .navbar-menu {
+    float: right;
+    line-height: 40px;
+}
+#header .main-header .container .navbar .navbar-menu .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+#header .main-header .container .navbar .navbar-menu .nav-item .nav-link {
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Raleway' sans-serif;
+    transition: .4s linear;
+}
+#header .main-header .container .navbar .navbar-menu .nav-item .nav-link:hover {
+    color: rgb(111, 71, 148);
+}
+#header .main-header .container .navbar .navbar-menu .nav-item:hover .nav-link{
+    border-bottom: 2px solid rgb(111, 71, 148);
+}
+
+.show-menu-btn, .hide-menu-btn {
+    font-size: 25px;
+    transition: .4s;
+    display: none;
+    cursor: pointer;
+}
+.show-menu-btn:hover, .hide-menu-btn:hover {
+    color: rgb(111, 71, 148);
+}
+.show-menu-btn {
+    float: right;   
+}
+.show-menu-btn i {
+    line-height: 80px;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+
+/*hero part*/
+section {
+    display: block;
+}
+
+#hero .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+
+
+#hero .row .top-side {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+#hero .row .top-side .hero-title {
+    width: 100%;
+    padding-top: 150px;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+}
+#hero .row .top-side .hero-parag {
+    width: 80%;
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+#hero .row .top-side .btn-group {
+    padding-top: 35px;
+    padding-bottom: 0px;
+}
+#hero .row .top-side .btn-group a {
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+#hero .row .top-side .btn-group a.start {
+    background-color: rgba(24, 138, 92, 0.911);
+}
+#hero .row .top-side .btn-group a.start:hover {
+    background-color: rgba(40, 185, 127, 0.911);
+}
+#hero .row .top-side .btn-group a.contact {
+    background-color: #444; 
+    margin-left: 15px;
+}
+#hero .row .top-side .btn-group a.contact:hover {
+    background-color: #555;
+}
+#hero .row .top-side .figure {
+    position: relative;
+    width: 450px;
+    margin-left: 40px;
+}
+#hero .row .top-side .figure img{
+    position: absolute;
+}
+
+
+
+
+
+#hero .emaim-btm {
+    width: 80%;
+    margin-top: 100px;
+}
+#hero .emaim-btm input{
+    width: 80%;
+    padding: 20px 10px 19px 25px;
+    font-size: 16px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 0.5px solid #999;
+}
+#hero .emaim-btm a {
+    margin-left: -0.5%;
+    width: 20%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: black;
+    padding: 20px 40px 20px 20px;
+    color: #fff;
+}
+#hero .emaim-btm a:visited, :focus{
+    outline: none;
+}
+
+#hero .emaim-btm a:hover {
+    color:rgb(111, 71, 148)
+}
+
+
+/*************************** Responsive Part *****************************/
+
+@media only screen and (max-width: 1150px) {
+    #hero .row .top-side .hero-title {
+        font-size: 40px;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+    .logo .logo-img{
+        width: 180px;
+        height: 40px;
+    }
+    
+    #header .main-header .container .navbar .navbar-menu .nav-item {
+        margin: 0 7px;
+    }
+    #header .main-header .container .navbar .navbar-menu .nav-item .nav-link {
+        font-size: 16px;
+    }
+    #hero .row .top-side .hero-title {
+        padding-top: 100px;
+        font-size: 34px;
+    }
+    #hero .row .top-side .hero-parag {
+        font-size: 15px;
+    }
+    #hero .row .top-side .figure {
+        width: 400px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #hero .row {
+        flex-direction: column;
+    }
+    #hero .row .top-side .figure {
+        display: none;
+    }
+    #hero .row .top-side:first-child {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    #hero .row .top-side .hero-parag {
+        width: 100%;
+        padding: 0 50px;
+    }
+   .emaim-btm {
+       width: auto;
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width: 850px) {
+    .logo .logo-img{
+        width: 180px;
+        height: 40px;
+    }
+    .show-menu-btn, .hide-menu-btn {
+        display: block;
+    }
+    #header .main-header .container .navbar-menu {
+        position: fixed;
+        width: 100%;
+        margin: 0; 
+        height: 100vh;
+        background: #333;
+        right: 100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    #header .main-header .container .navbar .navbar-menu .nav-item {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #header .main-header .container .navbar #chk:checked ~ .navbar-menu {
+        right: 0;
+    }
+    #hero .row .top-side .btn-group {
+        padding-top: 45px;
+    }
+    #hero .row .top-side .btn-group a {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 800px) {
+    #hero .emaim-btm {
+        margin: 50px auto 0;
+    }
+    #hero .emaim-btm input {
+        width: 70%;
+        padding: 15px 5px 15px 10px;
+    }
+    #hero .emaim-btm a {
+        padding: 15.2px 25px;
+        margin-left: -1%;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 501px){
+    #hero .emaim-btm input {
+        width: 50%;
+}
