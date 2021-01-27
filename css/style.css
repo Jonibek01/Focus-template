@@ -182,6 +182,30 @@ section {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************** Responsive Part *****************************/
 
 @media only screen and (max-width: 1150px) {
@@ -192,6 +216,8 @@ section {
         max-width: 90%;
     }
 }
+
+/*------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 850px) and (max-width: 1000px) {
     .logo .logo-img{
@@ -217,6 +243,9 @@ section {
         margin-top: 40px;
     }
 }
+
+/*------------------------------------------------------------------------*/
+
 @media only screen and (max-width: 850px) {
     #hero .row {
         flex-direction: column;
@@ -237,9 +266,6 @@ section {
        width: auto;
         margin: 0 auto;
     }
-
-}
-@media only screen and (max-width: 850px) {
     .logo .logo-img{
         width: 180px;
         height: 40px;
@@ -281,6 +307,8 @@ section {
     }
 }
 
+/*------------------------------------------------------------------------*/
+
 @media only screen and (min-width: 450px) and (max-width: 800px) {
     #hero .emaim-btm {
         margin: 50px auto 0;
@@ -294,7 +322,62 @@ section {
         margin-left: -1%;
     }
 }
+
+/*------------------------------------------------------------------------*/
+
 @media only screen and (min-width: 300px) and (max-width: 501px){
+    #hero .row .top-side .hero-title {
+        padding-top: 70px;
+    }
+    #hero .emaim-btm  {
+        width: 90%;
+        margin: 45px 25px  0 45px;
+
+    }
     #hero .emaim-btm input {
-        width: 50%;
+        width: 65%;
+        padding: 8px 5px 8px 10px;
+    }
+    #hero .emaim-btm a {
+        width: 10%;
+        padding: 8px 15px;
+        margin-left: -2%;
+    }
+    
+}
+
+/*------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 330px){
+    #hero .emaim-btm  {
+        width: 80%;
+    }
+    #hero .emaim-btm input {
+        width: 65%;
+        padding: 6px 5px 6px 10px;
+
+    }
+    #hero .emaim-btm a {
+        width: 5%;
+        padding: 6px 8px;
+        margin-left: -2%;
+    }
+
+    #hero .row .top-side .btn-group a {
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+/*------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 300px) {
+    #hero .emaim-btm  { 
+        margin: 45px 25px  0 35px;
+
+    }
+    #hero .row .top-side .hero-title {
+        padding-top: 70px;
+        font-size: 35px;
+    }
 }
