@@ -102,7 +102,7 @@
     #footer .container .footer-body .col-6__2 {
         text-align: center;
         width: 80%;
-
+        margin-left: -5px;
     }
 
     #footer .container .footer-end {
